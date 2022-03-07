@@ -1,5 +1,4 @@
-
-#' FetchCSV
+#' @title FetchCSV
 #'
 #' @param path string that represents directory path
 #' @importFrom utils read.table

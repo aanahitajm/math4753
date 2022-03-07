@@ -2,7 +2,7 @@
 % Please edit documentation in R/mynbin.R
 \name{mynbin}
 \alias{mynbin}
-\title{Title}
+\title{mynbin}
 \usage{
 mynbin(y, r, p)
 }
@@ -17,7 +17,7 @@ mynbin(y, r, p)
 Returns the negative Binomial probability of an event, i.e., the number of failures until the rth success
 }
 \description{
-Title
+mynbin
 }
 \examples{
    \dontrun{mynbin(10,3,0.4)}

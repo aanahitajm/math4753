@@ -1,4 +1,4 @@
-#' Title
+#' @title mynbin
 #'
 #' @param y y is the number of trials until the rth success is observed
 #' @param r the number of successes

@@ -1,4 +1,4 @@
-#' myncurve
+#' @title myncurve
 #'
 #' @param mu #the mean of the data
 #' @param sigma #standard deviation of the data
@@ -24,4 +24,5 @@ myncurve = function(a, mu, sigma){
   list(Area = prob)
 }
 
+globalVariables("x")
 

@@ -1,4 +1,4 @@
-#' myfunddt
+#' @title myfunddt
 #'
 #' @param df Data frame that is read into the function.
 #' @param Species Specify the species of fish you want to plot data for. Options are LMBASS, CCATFISH, SMBUFFALO
@@ -29,3 +29,5 @@ myfunddt <- function(df, Species){
   
   g
 }
+
+globalVariables(c("SPECIES","WEIGHT", "LENGTH", "RIVER"))
