@@ -1,0 +1,53 @@
+---
+title: "What the package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MyStatsPackage)
+```
+
+# Introduction
+This vignette file was made to describe the functions and data present in the MyStatsPackage project made for MATH 4754
+
+## The first function: myboot2
+
+The first function is the myboot2 function that returns a histogram for a chosen statistic, i.e. mean, chi-squared, given x data set, a function to apply to the data and an alpha value to find the conf interval
+```{r}
+set.seed(35); 
+y = round(rnorm(30, mean=20, sd=3),3)
+myboot2(x=y, fun="sd", alpha =0.3)
+```
+
+## the second funtion: FetchCSV
+The FetchCSV function returns a data table using data frame. The specific path of the data set must be known.
+```{r}
+df = FetchCSV("C:/Statistics2022/ASS/ASS4/NZBIRDS.csv")
+df
+```
+
+## Third Function: myfunddt 
+The myfunddt function returns a graph for the ddt data frame. Specifically, it plots Length vs Weight and adds a quadratic model
+```{r}
+ddt = FetchCSV("C:/Statistics2022/Labs/Lab1/DDT-1.csv")
+myfunddt(df = ddt, Species = "CCATFISH") 
+```
+
+## Fourth Function: myncurve
+myncurve is a function that returns a plot of the normal distribution with the area/probability shaded in and written on the graph. Also lists the area into the command-line.
+
+```{r}
+myncurve(10, 5, 6)
+```
+

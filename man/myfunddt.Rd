@@ -18,5 +18,5 @@ A graph for the ddt data frame. Plots Length vs Weight and adds a quadratic mode
 myfunddt
 }
 \examples{
-  \dontrun{myddt(df = ddt, SPECIES  = "CCATFISH") }
+  \dontrun{myfunddt(df = ddt, Species  = "CCATFISH") }
 }
